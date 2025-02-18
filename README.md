@@ -11,11 +11,11 @@ brew install starship git
 brew install --cask font-fira-code
 ```
 
-Use fira code in your terminal
+Use a [Nerd font](https://www.nerdfonts.com/) in your terminal
 
 For example add this to you vscode config:
 ```json
-  "editor.fontFamily": "Fira Code",
+  "editor.fontFamily": "FiraCode Nerd Font",
   "editor.fontLigatures": true,
 ```
 
