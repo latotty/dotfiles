@@ -1,4 +1,14 @@
 # https://starship.rs/config/
 
+format = '$time$all'
+
+
 [gcloud]
+disabled = true
+
+[time]
+disabled = false
+format = "[$time]($style) "
+
+[buf]
 disabled = true
