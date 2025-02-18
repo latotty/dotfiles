@@ -1,0 +1,4 @@
+# https://starship.rs/config/
+
+[gcloud]
+disabled = true
