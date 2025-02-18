@@ -1,0 +1,20 @@
+[user]
+	name = LaTotty
+	email = latotty91@gmail.com
+
+[credential]
+	helper = osxkeychain
+
+[push]
+	followtags = true
+
+[core]
+	ignorecase = false
+	excludesFile = ~/.gitignore
+	editor = nano
+
+[color]
+	ui = true
+
+[url "git@github.com:"]
+	insteadOf = https://github.com/
