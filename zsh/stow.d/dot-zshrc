@@ -1,11 +1,11 @@
 # https://github.com/marlonrichert/zsh-snap
 
 # Download Znap, if it's not there yet.
-[[ -r ~/.zshstuff/znap/znap.zsh ]] ||
+[[ -r "${ZSHSTUFF}/znap/znap.zsh" ]] ||
     git clone --depth 1 -- \
-        https://github.com/marlonrichert/zsh-snap.git ~/.zshstuff/znap
+        https://github.com/marlonrichert/zsh-snap.git "${ZSHSTUFF}/znap"
 
-source ~/.zshstuff/znap/znap.zsh  # Start Znap
+source "${ZSHSTUFF}/znap/znap.zsh"
 
 # Prompt - https://starship.rs/
 znap eval starship 'starship init zsh --print-full-init'

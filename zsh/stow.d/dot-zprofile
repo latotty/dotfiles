@@ -1,0 +1,12 @@
+export ZSHSTUFF=~/.zshstuff
+export DOTFILES=~/dotfiles
+
+# Load zprofile files
+for file in $(find $DOTFILES -mindepth 1 -maxdepth 4 -type f -name '*.zprofile' | awk -F/ '{print $NF"|"$0}' | sort -t"|" -k1 | cut -d'|' -f2); do
+    source $file
+done
+
+# Load bin.d directories
+for dir in $(find $DOTFILES -mindepth 1 -maxdepth 4 -type d -name 'bin.d'); do
+    export PATH=$dir:$PATH
+done
