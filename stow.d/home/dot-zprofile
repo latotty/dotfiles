@@ -1,0 +1,13 @@
+export ZSHSTUFF=~/.zshstuff
+export DOTFILES=~/dotfiles
+
+for file in $DOTFILES/zprofile.d/*.zsh; do
+  \. "$file"
+done
+
+#!/bin/zsh
+if [ -f "$HOME/.zprofile.local" ]; then
+  \. "$HOME/.zprofile.local"
+fi
+
+## Below is autostuff

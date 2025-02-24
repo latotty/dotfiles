@@ -1,0 +1,10 @@
+#!/bin/zsh
+for file in $DOTFILES/zshrc.d/*.zsh; do
+  \. "$file"
+done
+
+if [ -f "$HOME/.zshrc.local" ]; then
+  \. "$HOME/.zshrc.local"
+fi
+
+## Below is autostuff

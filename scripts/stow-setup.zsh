@@ -43,4 +43,4 @@ STOW_ARGS+=(".")
 
 local PARENT_FOLDER=$(dirname $(dirname $0))
 
-find $PARENT_FOLDER -mindepth 2 -maxdepth 2 -type d -name "stow.d" -exec stow --dir={} $STOW_ARGS \;
+stow --dir=$PARENT_FOLDER/stow.d/home/ --target=$HOME $STOW_ARGS
