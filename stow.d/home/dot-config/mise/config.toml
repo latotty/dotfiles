@@ -1,11 +1,9 @@
 [tools]
 bun = "latest"
 go = "latest"
-jq = "latest"
 node = "lts"
 task = "latest"
 pnpm = "latest"
-gh = "latest"
 buf = "latest"
 helm = "latest"
 kubectl = "latest"
