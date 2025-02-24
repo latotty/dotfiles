@@ -24,7 +24,7 @@ personalised version of the configuration.
 
 For local settings create a `~/.zshrc.local` and `~/.zprofile.local`, these will be loaded after each corresponding file.
 
-For project specific config, create a `mise.local.toml` in the project folder (gitignored by default if you linked the global gitignore), and add the required vars into that. [https://mise.jdx.dev/environments/]()
+For project specific config, create a `mise.local.toml` in the project folder (gitignored by default if you linked the global gitignore), and add the required vars into that. [https://mise.jdx.dev/environments/](https://mise.jdx.dev/environments/)
 
 # Setup
 
@@ -46,10 +46,12 @@ mise install
 
 On brew change: `brew-dump` or `brew bundle dump --global --force`
 
+# Mention
+
+Visit [https://github.com/balintant/dotfiles](https://github.com/balintant/dotfiles), we worked together to update our outdated zsh config 😅
+
+
+
 [Homebrew]: https://brew.sh
 [Mise]: https://mise.jdx.dev
 [Stow]: https://www.gnu.org/software/stow/
-
-# Mention
-
-Visit [https://github.com/balintant/dotfiles](), we worked together to update our outdated zsh config 😅
