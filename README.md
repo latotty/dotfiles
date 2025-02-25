@@ -44,7 +44,7 @@ mise install
 ```
 
 
-On brew change: `brew-dump` or `brew bundle dump --global --force`
+On brew change: `brew bundle dump --global --force`
 
 # Mention
 
