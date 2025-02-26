@@ -43,4 +43,4 @@ STOW_ARGS+=(".")
 
 local PARENT_FOLDER=$(dirname $(dirname $0))
 
-stow --dir=$PARENT_FOLDER/stow.d/home/ --target=$HOME $STOW_ARGS
+stow --dir="${PARENT_FOLDER}/stow.d/home/" --target=$HOME $STOW_ARGS

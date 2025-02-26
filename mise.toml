@@ -1,0 +1,5 @@
+[tools]
+shellcheck = "latest"
+
+[tasks.lint]
+run = "shellcheck --shell=bash ./{zshrc.d,zprofile.d,scripts}/*.zsh ./stow.d/home/dot-{zshrc,zprofile}"
