@@ -1,3 +1,4 @@
+#!/bin/zsh
 export ZSHSTUFF=~/.zshstuff
 export DOTFILES=~/dotfiles
 
