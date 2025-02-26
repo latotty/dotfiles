@@ -26,7 +26,7 @@ personalised version of the configuration.
 For the brewfile, you most likely want to use your own set of packages.
 ```sh
 # install basic required packages for this dotfiles
-brew install homebrew/bundle mas mise starship
+brew install mas mise starship stow git
 ```
 Clone the repo to `~/dotfiles`
 ```sh
@@ -56,8 +56,22 @@ brew bundle --file ./stow.d/home/dot-Brewfile
 # Symlink the configuration files
 ./scripts/stow-setup.zsh
 
+# If there is conflict errors from stow, move the marked files to a backup folder (and update the ones in the dotfiles if needed)
+
 # Install the packages managed by `mise`
 mise install
+```
+
+Use a [Nerd font](https://www.nerdfonts.com/) in your terminal
+
+```sh
+brew install --cask font-fira-code
+```
+
+For example add this to you vscode config:
+```json
+  "editor.fontFamily": "FiraCode Nerd Font",
+  "editor.fontLigatures": true,
 ```
 
 
