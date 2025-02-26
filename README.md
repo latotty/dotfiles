@@ -81,6 +81,7 @@ On brew change: `brew bundle dump --global --force`
 
 Visit [https://github.com/balintant/dotfiles](https://github.com/balintant/dotfiles), we worked together to update our outdated zsh config 😅
 
+First forker [https://github.com/Trubius/dotfiles](https://github.com/Trubius/dotfiles) 🤗
 
 
 [Homebrew]: https://brew.sh
