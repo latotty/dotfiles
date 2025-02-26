@@ -22,6 +22,20 @@ personalised version of the configuration.
 | [Gitconfig](./stow.d/home/dot-gitconfig)                   | Contains git configuration. Change at least the username. |
 | [Mise](./stow.d/home/dot-config/mise/config.toml)          | Contains the tools that I regularly use.                  |
 
+## Brewfile
+For the brewfile, you most likely want to use your own set of packages.
+```sh
+# install basic required packages for this dotfiles
+brew install homebrew/bundle mas mise starship
+```
+Clone the repo to `~/dotfiles`
+```sh
+# dump your packages
+brew bundle dump --force --file ~/dotfiles/stow.d/home/dot-Brewfile
+# check changes in git, and adjust the content for yourself
+```
+
+## Local settings
 For local settings create a `~/.zshrc.local` and `~/.zprofile.local`, these will be loaded after each corresponding file.
 
 For project specific config, create a `mise.local.toml` in the project folder (gitignored by default if you linked the global gitignore), and add the required vars into that. [https://mise.jdx.dev/environments/](https://mise.jdx.dev/environments/)
@@ -32,6 +46,9 @@ After running the commands below, your whole environment will be set up and
 ready for work.
 
 ```shell
+git clone git@github.com:latotty/dotfiles.git ~/dotfiles
+cd ~/dotfiles
+
 # Install Homebrew and the packages managed by it
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew bundle --file ./stow.d/home/dot-Brewfile
