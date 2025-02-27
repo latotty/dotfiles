@@ -1,3 +1,6 @@
+[settings]
+auto_install = true
+
 [tools]
 shellcheck = "latest"
 
