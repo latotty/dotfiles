@@ -3,3 +3,6 @@ shellcheck = "latest"
 
 [tasks.lint]
 run = "shellcheck --shell=bash ./{zshrc.d,zprofile.d,scripts}/*.zsh ./stow.d/home/dot-{zshrc,zprofile}"
+
+[tasks.brew-dump]
+run = "brew bundle dump --global --force"
